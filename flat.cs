@@ -17,11 +17,18 @@ namespace ChuwiGoHome
             InitializeComponent();
         }
 
-        private void aceptar_Click(object sender, EventArgs e)
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            LoginF form = new LoginF();
-            form.Show();
-            this.Hide();
+            rectangleShape2.Width += 5;
+            if (rectangleShape2.Width>=518)
+            {
+                timer1.Stop();
+                //MessageBox.Show("Felicidades!");
+                LoginF form = new LoginF();
+                form.Show();
+                this.Hide();
+            }
         }
     }
 }
