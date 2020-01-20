@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace ChuwiGoHome
 {
-    public partial class Form1 : Form
+    public partial class flat : Form
     {
-        public Form1()
+        public flat()
         {
             InitializeComponent();
         }
-       
+
+        private void aceptar_Click(object sender, EventArgs e)
+        {
+            LoginF form = new LoginF();
+            form.Show();
+            this.Hide();
+        }
     }
 }

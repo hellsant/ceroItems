@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace ChuwiGoHome
 {
-    public partial class Form1 : Form
+    public partial class Productos : Form
     {
-        public Form1()
+        public Productos()
         {
             InitializeComponent();
         }
-       
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ChuwiGoHome</RootNamespace>
     <AssemblyName>ChuwiGoHome</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +48,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="flat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flat.Designer.cs">
+      <DependentUpon>flat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginF.Designer.cs">
+      <DependentUpon>LoginF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar.Designer.cs">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="flat.resx">
+      <DependentUpon>flat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginF.resx">
+      <DependentUpon>LoginF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +109,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registrar.resx">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\flat.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
