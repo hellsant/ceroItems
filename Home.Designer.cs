@@ -32,11 +32,24 @@
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_slide = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.restaurar_p = new System.Windows.Forms.PictureBox();
             this.minimizar_p = new System.Windows.Forms.PictureBox();
             this.maximizar_p = new System.Windows.Forms.PictureBox();
             this.cerrar_p = new System.Windows.Forms.PictureBox();
             this.menuVertical = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn1_panel11 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.subItem_producto = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_admin = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btn_lateral_7 = new System.Windows.Forms.Button();
@@ -53,31 +66,22 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn_lateral_1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btn_admin = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btn1_panel11 = new System.Windows.Forms.Panel();
-            this.subItem_producto = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.btn_slide = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelPrincipal.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_slide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurar_p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar_p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximizar_p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerrar_p)).BeginInit();
             this.menuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.btn1_panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_slide)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.btn1_panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -89,16 +93,16 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(950, 650);
+            this.panelPrincipal.Size = new System.Drawing.Size(1110, 700);
             this.panelPrincipal.TabIndex = 0;
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelContenedor.BackColor = System.Drawing.Color.Yellow;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(250, 53);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(700, 597);
+            this.panelContenedor.Size = new System.Drawing.Size(860, 647);
             this.panelContenedor.TabIndex = 2;
             // 
             // panel2
@@ -113,9 +117,29 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(250, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(700, 53);
+            this.panel2.Size = new System.Drawing.Size(860, 53);
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // btn_slide
+            // 
+            this.btn_slide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_slide.BackgroundImage")));
+            this.btn_slide.Location = new System.Drawing.Point(0, 11);
+            this.btn_slide.Name = "btn_slide";
+            this.btn_slide.Size = new System.Drawing.Size(35, 33);
+            this.btn_slide.TabIndex = 5;
+            this.btn_slide.TabStop = false;
+            this.btn_slide.Click += new System.EventHandler(this.btn_slide_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.Location = new System.Drawing.Point(677, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(71, 50);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
             // 
             // restaurar_p
             // 
@@ -123,7 +147,7 @@
             this.restaurar_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.restaurar_p.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("restaurar_p.BackgroundImage")));
             this.restaurar_p.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.restaurar_p.Location = new System.Drawing.Point(630, 5);
+            this.restaurar_p.Location = new System.Drawing.Point(790, 5);
             this.restaurar_p.Name = "restaurar_p";
             this.restaurar_p.Size = new System.Drawing.Size(30, 30);
             this.restaurar_p.TabIndex = 3;
@@ -137,7 +161,7 @@
             this.minimizar_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.minimizar_p.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimizar_p.BackgroundImage")));
             this.minimizar_p.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimizar_p.Location = new System.Drawing.Point(594, 5);
+            this.minimizar_p.Location = new System.Drawing.Point(754, 5);
             this.minimizar_p.Name = "minimizar_p";
             this.minimizar_p.Size = new System.Drawing.Size(30, 31);
             this.minimizar_p.TabIndex = 2;
@@ -150,7 +174,7 @@
             this.maximizar_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.maximizar_p.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("maximizar_p.BackgroundImage")));
             this.maximizar_p.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.maximizar_p.Location = new System.Drawing.Point(630, 5);
+            this.maximizar_p.Location = new System.Drawing.Point(790, 5);
             this.maximizar_p.Name = "maximizar_p";
             this.maximizar_p.Size = new System.Drawing.Size(30, 31);
             this.maximizar_p.TabIndex = 1;
@@ -163,7 +187,7 @@
             this.cerrar_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.cerrar_p.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cerrar_p.BackgroundImage")));
             this.cerrar_p.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cerrar_p.Location = new System.Drawing.Point(666, 5);
+            this.cerrar_p.Location = new System.Drawing.Point(826, 5);
             this.cerrar_p.Name = "cerrar_p";
             this.cerrar_p.Size = new System.Drawing.Size(30, 31);
             this.cerrar_p.TabIndex = 0;
@@ -173,6 +197,7 @@
             // menuVertical
             // 
             this.menuVertical.BackColor = System.Drawing.Color.Goldenrod;
+            this.menuVertical.Controls.Add(this.panel1);
             this.menuVertical.Controls.Add(this.pictureBox5);
             this.menuVertical.Controls.Add(this.btn1_panel11);
             this.menuVertical.Controls.Add(this.pictureBox3);
@@ -198,8 +223,153 @@
             this.menuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuVertical.Location = new System.Drawing.Point(0, 0);
             this.menuVertical.Name = "menuVertical";
-            this.menuVertical.Size = new System.Drawing.Size(250, 650);
+            this.menuVertical.Size = new System.Drawing.Size(250, 700);
             this.menuVertical.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Location = new System.Drawing.Point(141, 343);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(196, 72);
+            this.panel1.TabIndex = 23;
+            this.panel1.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 34);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 32);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Estado de usuarios";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(195, 32);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Registrar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(13, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(223, 50);
+            this.pictureBox5.TabIndex = 22;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btn1_panel11
+            // 
+            this.btn1_panel11.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn1_panel11.Controls.Add(this.button8);
+            this.btn1_panel11.Controls.Add(this.subItem_producto);
+            this.btn1_panel11.Location = new System.Drawing.Point(143, 227);
+            this.btn1_panel11.Name = "btn1_panel11";
+            this.btn1_panel11.Size = new System.Drawing.Size(196, 72);
+            this.btn1_panel11.TabIndex = 0;
+            this.btn1_panel11.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.Transparent;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(0, 34);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(195, 32);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Categorias";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // subItem_producto
+            // 
+            this.subItem_producto.FlatAppearance.BorderSize = 0;
+            this.subItem_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.subItem_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subItem_producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subItem_producto.ForeColor = System.Drawing.Color.Transparent;
+            this.subItem_producto.Image = ((System.Drawing.Image)(resources.GetObject("subItem_producto.Image")));
+            this.subItem_producto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.subItem_producto.Location = new System.Drawing.Point(0, 3);
+            this.subItem_producto.Name = "subItem_producto";
+            this.subItem_producto.Size = new System.Drawing.Size(195, 32);
+            this.subItem_producto.TabIndex = 4;
+            this.subItem_producto.Text = "Productos";
+            this.subItem_producto.UseVisualStyleBackColor = true;
+            this.subItem_producto.Click += new System.EventHandler(this.subItem_producto_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Location = new System.Drawing.Point(30, 666);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Location = new System.Drawing.Point(189, 666);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // btn_admin
+            // 
+            this.btn_admin.BackColor = System.Drawing.Color.Goldenrod;
+            this.btn_admin.FlatAppearance.BorderSize = 0;
+            this.btn_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_admin.ForeColor = System.Drawing.Color.White;
+            this.btn_admin.Location = new System.Drawing.Point(76, 169);
+            this.btn_admin.Name = "btn_admin";
+            this.btn_admin.Size = new System.Drawing.Size(91, 23);
+            this.btn_admin.TabIndex = 19;
+            this.btn_admin.Text = "Administrador";
+            this.btn_admin.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(79, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "ferch@gmail.com";
             // 
             // label1
             // 
@@ -280,7 +450,7 @@
             this.btn_lateral_5.Name = "btn_lateral_5";
             this.btn_lateral_5.Size = new System.Drawing.Size(195, 32);
             this.btn_lateral_5.TabIndex = 11;
-            this.btn_lateral_5.Text = "Productos4";
+            this.btn_lateral_5.Text = "Actividades";
             this.btn_lateral_5.UseVisualStyleBackColor = true;
             // 
             // panel7
@@ -304,7 +474,7 @@
             this.btn_lateral_4.Name = "btn_lateral_4";
             this.btn_lateral_4.Size = new System.Drawing.Size(195, 32);
             this.btn_lateral_4.TabIndex = 9;
-            this.btn_lateral_4.Text = "Productos3";
+            this.btn_lateral_4.Text = "Usuarios";
             this.btn_lateral_4.UseVisualStyleBackColor = true;
             // 
             // panel6
@@ -328,8 +498,9 @@
             this.btn_lateral_3.Name = "btn_lateral_3";
             this.btn_lateral_3.Size = new System.Drawing.Size(195, 32);
             this.btn_lateral_3.TabIndex = 7;
-            this.btn_lateral_3.Text = "Productos2";
+            this.btn_lateral_3.Text = "Pedidos";
             this.btn_lateral_3.UseVisualStyleBackColor = true;
+            this.btn_lateral_3.Click += new System.EventHandler(this.btn_lateral_3_Click);
             // 
             // panel5
             // 
@@ -352,8 +523,9 @@
             this.btn_lateral_2.Name = "btn_lateral_2";
             this.btn_lateral_2.Size = new System.Drawing.Size(195, 32);
             this.btn_lateral_2.TabIndex = 5;
-            this.btn_lateral_2.Text = "Productos1";
+            this.btn_lateral_2.Text = "Categorias";
             this.btn_lateral_2.UseVisualStyleBackColor = true;
+            this.btn_lateral_2.Click += new System.EventHandler(this.btn_lateral_2_Click);
             // 
             // panel4
             // 
@@ -376,7 +548,7 @@
             this.btn_lateral_1.Name = "btn_lateral_1";
             this.btn_lateral_1.Size = new System.Drawing.Size(195, 32);
             this.btn_lateral_1.TabIndex = 3;
-            this.btn_lateral_1.Text = "Productos";
+            this.btn_lateral_1.Text = "Almacen";
             this.btn_lateral_1.UseVisualStyleBackColor = true;
             this.btn_lateral_1.Click += new System.EventHandler(this.aceptar_Click);
             // 
@@ -389,152 +561,33 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(79, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "ferch@gmail.com";
-            // 
-            // btn_admin
-            // 
-            this.btn_admin.BackColor = System.Drawing.Color.Goldenrod;
-            this.btn_admin.FlatAppearance.BorderSize = 0;
-            this.btn_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_admin.ForeColor = System.Drawing.Color.White;
-            this.btn_admin.Location = new System.Drawing.Point(76, 169);
-            this.btn_admin.Name = "btn_admin";
-            this.btn_admin.Size = new System.Drawing.Size(91, 23);
-            this.btn_admin.TabIndex = 19;
-            this.btn_admin.Text = "Administrador";
-            this.btn_admin.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(189, 616);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 31);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 616);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 31);
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(517, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(71, 50);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btn1_panel11
-            // 
-            this.btn1_panel11.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn1_panel11.Controls.Add(this.button8);
-            this.btn1_panel11.Controls.Add(this.subItem_producto);
-            this.btn1_panel11.Location = new System.Drawing.Point(143, 227);
-            this.btn1_panel11.Name = "btn1_panel11";
-            this.btn1_panel11.Size = new System.Drawing.Size(196, 72);
-            this.btn1_panel11.TabIndex = 0;
-            this.btn1_panel11.Visible = false;
-            // 
-            // subItem_producto
-            // 
-            this.subItem_producto.FlatAppearance.BorderSize = 0;
-            this.subItem_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.subItem_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.subItem_producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subItem_producto.ForeColor = System.Drawing.Color.Transparent;
-            this.subItem_producto.Image = ((System.Drawing.Image)(resources.GetObject("subItem_producto.Image")));
-            this.subItem_producto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.subItem_producto.Location = new System.Drawing.Point(0, 3);
-            this.subItem_producto.Name = "subItem_producto";
-            this.subItem_producto.Size = new System.Drawing.Size(195, 32);
-            this.subItem_producto.TabIndex = 4;
-            this.subItem_producto.Text = "Productos";
-            this.subItem_producto.UseVisualStyleBackColor = true;
-            this.subItem_producto.Click += new System.EventHandler(this.subItem_producto_Click);
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 34);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(195, 32);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Categorias";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // btn_slide
-            // 
-            this.btn_slide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_slide.BackgroundImage")));
-            this.btn_slide.Location = new System.Drawing.Point(0, 11);
-            this.btn_slide.Name = "btn_slide";
-            this.btn_slide.Size = new System.Drawing.Size(35, 33);
-            this.btn_slide.TabIndex = 5;
-            this.btn_slide.TabStop = false;
-            this.btn_slide.Click += new System.EventHandler(this.btn_slide_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(13, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(223, 50);
-            this.pictureBox5.TabIndex = 22;
-            this.pictureBox5.TabStop = false;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 650);
+            this.ClientSize = new System.Drawing.Size(1110, 700);
             this.Controls.Add(this.panelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(580, 680);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.panelPrincipal.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_slide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurar_p)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar_p)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximizar_p)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerrar_p)).EndInit();
             this.menuVertical.ResumeLayout(false);
             this.menuVertical.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.btn1_panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_slide)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.btn1_panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -576,5 +629,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox btn_slide;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -75,6 +75,7 @@
             this.textBox_key.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox_key.Location = new System.Drawing.Point(108, 313);
             this.textBox_key.Name = "textBox_key";
+            this.textBox_key.PasswordChar = '*';
             this.textBox_key.Size = new System.Drawing.Size(166, 22);
             this.textBox_key.TabIndex = 16;
             this.textBox_key.Text = "Confirmar clave";

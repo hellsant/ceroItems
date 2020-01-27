@@ -10,20 +10,15 @@ using System.Windows.Forms;
 
 namespace ChuwiGoHome
 {
-    public partial class Productos : Form
+    public partial class Categoria : Form
     {
         private int tolerance = 15;
         private const int WM_NCHITTEST = 132;
         private const int HTBOTTOMRIGHT = 17;
         private Rectangle sizeGripRectangle;
-        public Productos()
+        public Categoria()
         {
             InitializeComponent();
-        }
-
-        private void btnclose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -112,59 +107,66 @@ namespace ChuwiGoHome
 
         }
 
-        private void anterior_cat_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel2_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel3_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel7_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel4_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel5_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel6_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
-        private void panel8_categoria_MouseClick(object sender, MouseEventArgs e)
-        {
-            DetalleProducto detProd = new DetalleProducto();
-            detProd.Show();
-        }
-
         private void cerrar_cat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        
+       
+        private void panel1_categoria_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            DetalleCategoria detalle = new DetalleCategoria();
+            detalle.Show();
+        }
+        private void panel4_categoria_MouseClick(object sender, MouseEventArgs e)
+        {
+            DetalleCategoria detalle = new DetalleCategoria();
+            detalle.Show();
+        }
+
+        private void panel5_categoria_MouseClick(object sender, MouseEventArgs e)
+        {
+            DetalleCategoria detalle = new DetalleCategoria();
+            detalle.Show();
+        }
+
+        private void panel6_categoria_MouseClick(object sender, MouseEventArgs e)
+        {
+            DetalleCategoria detalle = new DetalleCategoria();
+            detalle.Show();
+        }
+
+        private void panel2_categoria_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            DetalleCategoria detalle = new DetalleCategoria();
+            detalle.Show();
+        }
+
+        private void panel3_categoria_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            DetalleCategoria detalle = new DetalleCategoria();
+            detalle.Show();
+        }
+
+        private void siguiente_cat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Siguiente");
+        }
+
+        private void anterior_cat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Anterior");
+        }
+
+        private void agregar_cat_Click(object sender, EventArgs e)
+        {
+            CategoriaControl catControl = new CategoriaControl();
+            catControl.Show();
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Buscar");
+        }
     }
 }

@@ -15,6 +15,7 @@ namespace ChuwiGoHome
         public Home()
         {
             InitializeComponent();
+            AbrirFormInPanel(new Productos());
         }
         /*
         protected override void WndProc1(ref Message m)
@@ -64,7 +65,8 @@ namespace ChuwiGoHome
             sizeGripRectangle = new Rectangle(ClientRectangle.Width-tolerance, ClientRectangle.Height-tolerance,tolerance,HTBOTTOMRIGHT);
             region.Exclude(sizeGripRectangle);
             this.panelPrincipal.Region = region;
-            this.Invalidate();
+            this.Invalidate();          
+
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -112,14 +114,42 @@ namespace ChuwiGoHome
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            SendMessage(this.Handle, 0x112, 0xf012, 0);          
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        private void actualizar_sidebar()
+        {
+            int y = 227;
+            int rango = 38;
+            if (btn1_panel11.Visible == true)
+            {
+                btn1_panel11.Visible = false;
+                panel4.Location = new Point(2, y);
+                btn_lateral_1.Location = new Point(5, y);
+                panel5.Location = new Point(2, y + rango);
+                btn_lateral_2.Location = new Point(5, y + rango);
+                rango += 38;
+                panel6.Location = new Point(2, y + rango);
+                btn_lateral_3.Location = new Point(5, y + rango);
+                rango += 38;
+                panel7.Location = new Point(2, y + rango);
+                btn_lateral_4.Location = new Point(5, y + rango);
+                rango += 38;
+                panel8.Location = new Point(2, y + rango);
+                btn_lateral_5.Location = new Point(5, y + rango);
+                rango += 38;
+                panel9.Location = new Point(2, y + rango);
+                btn_lateral_6.Location = new Point(5, y + rango);
+                rango += 38;
+                panel10.Location = new Point(2, y + rango);
+                btn_lateral_7.Location = new Point(5, y + rango);
+            }
+        }
         private void aceptar_Click(object sender, EventArgs e)
         {
             int y = 227;
@@ -198,6 +228,26 @@ namespace ChuwiGoHome
         private void subItem_producto_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Productos());
+            actualizar_sidebar();
+        }
+
+        private void btn_lateral_2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Categoria());
+            actualizar_sidebar();
+        }
+
+        private void btn_lateral_3_Click(object sender, EventArgs e)
+        {
+            //pedido
+            AbrirFormInPanel(new Pedidos());
+            actualizar_sidebar();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Categoria());
+            actualizar_sidebar();
         }
     }
 }
